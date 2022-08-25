@@ -26,9 +26,8 @@ public class Arreglos {
         System.out.println(ap.getElemento(0));
         System.out.println(ap);
         System.out.println(ap.getElemento(1));
+        ap.setElemento(2, new Persona(12, "Emiliano"));
         
-       
-       
         
     }
     
