@@ -4,7 +4,7 @@
  */
 package empresa;
 
-import ico.fes.acme.ManipulacionCSV;
+import ico.fes.acme.NominaADTT;
 
 /**
  *
@@ -18,8 +18,10 @@ public class Empresa {
     public static void main(String[] args) {
         // TODO code application logic here
         
-        ManipulacionCSV ep = new ManipulacionCSV();
+        NominaADTT ep = new NominaADTT();
         ep.leerArchivos("C:\\Users\\emycr\\Documents\\ED1310\\junio.dat");
+        
+        
     }
     
 }

@@ -99,25 +99,25 @@ public class Empleado {
         return this.sueldoBase + prestacion + he;
     }
     
-    /**public void obtener_max_min(){
-        int min=2999999; 
-        int max =0; 
-        Empleado emplMax; 
-        Empleado emplMin; 
-        
-        for (Empleado e : empleados) {
-            if(e.getAnioIngreso()>max){
-                max=e.getAnioIngreso(); 
-                emplMax=e;
-            }
-            if(e.getAnioIngreso()<min){
-                min=e.getAnioIngreso(); 
-                emplMin=e;
-            }
-        }
-        System.out.println(emplMax);
-        System.out.println(emplMin);
-        
-    }*/
+//    public void obtener_max_min(){
+//        int min=2999999; 
+//        int max =0; 
+//        Empleado emplMax; 
+//        Empleado emplMin; 
+//        
+//        for (Empleado e : empleados) {
+//            if(e.getAnioIngreso()>max){
+//                max=e.getAnioIngreso(); 
+//                emplMax=e;
+//            }
+//            if(e.getAnioIngreso()<min){
+//                min=e.getAnioIngreso(); 
+//                emplMin=e;
+//            }
+//        }
+//        System.out.println(emplMax);
+//        System.out.println(emplMin);
+//        
+//    }
     
 }
