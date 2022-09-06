@@ -62,6 +62,7 @@ public class NominaADTT {
         } catch (Exception e) {
             JOptionPane.showMessageDialog(null, e);
         }
+        
 
     }
 
@@ -79,6 +80,7 @@ public class NominaADTT {
         System.out.println(em.getNombre() + " su sueldo actual es de: $" + em.calcularSueldo());
         arr.setElemento(contador, em);
         antiguedad.setElemento(contador, Integer.parseInt(partes[6]));
+        System.out.println(em);
 
     }
 
@@ -97,9 +99,10 @@ public void obtener_max_min(){
                 min=e.getAnioIngreso(); 
                 emplMin=e;
             }
-        System.out.println("EL empleado mása antigüo es "+emplMax.getNombre()+" desde "+max);
-        System.out.println("EL empleado mása antigüo es "+emplMax.getNombre()+" desde "+min);
+        
         }
+        System.out.println("\nEL empleado mása antigüo es "+emplMax.getNombre()+" desde "+max);
+        System.out.println("\nEL empleado mása antigüo es "+emplMin.getNombre()+" desde "+min);
         
 }
         
