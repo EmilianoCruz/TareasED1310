@@ -53,12 +53,12 @@ public class NominaADTT {
                     continue;
                 } else {
                     partes = linea.split(",");
-                    CrearEmpleados();
+                    Empleados();
                     contador += 1;
                 }
             }
 
-            //}
+            
         } catch (Exception e) {
             JOptionPane.showMessageDialog(null, e);
         }
@@ -66,7 +66,7 @@ public class NominaADTT {
 
     }
 
-    public void CrearEmpleados() {
+    public void Empleados() {
         arr = new Arreglo(longitud);
 
         Empleado em = new Empleado();
@@ -84,50 +84,26 @@ public class NominaADTT {
 
     }
 
-public void obtener_max_min(){
-        int min=2999999; 
-        int max =0; 
-        Empleado emplMax = new Empleado(); 
-        Empleado emplMin=new Empleado(); 
-        LinkedList<Empleado> arr = new LinkedList<Empleado>(); 
-        for (Empleado e : arr) {
-            if(e.getAnioIngreso()>max){
-                max=e.getAnioIngreso(); 
-                emplMax=e;
-            }
-            if(e.getAnioIngreso()<min){
-                min=e.getAnioIngreso(); 
-                emplMin=e;
-            }
+//public void obtener_max_min(){
+//        int min=2999999; 
+//        int max =0; 
+//        Empleado emplMax = new Empleado(); 
+//        Empleado emplMin=new Empleado(); 
+//        LinkedList<Empleado> arr = new LinkedList<Empleado>(); 
+//        for (Empleado e : arr) {
+//            if(e.getAnioIngreso()>max){
+//                max=e.getAnioIngreso(); 
+//                emplMax=e;
+//            }
+//            if(e.getAnioIngreso()<min){
+//                min=e.getAnioIngreso(); 
+//                emplMin=e;
+//            }
+//        
+//        }
+//        System.out.println("\nEL empleado mása antigüo es "+emplMax.getNombre()+" desde "+max);
+//        System.out.println("\nEL empleado mása antigüo es "+emplMin.getNombre()+" desde "+min);
+//        
+//}
         
-        }
-        System.out.println("\nEL empleado mása antigüo es "+emplMax.getNombre()+" desde "+max);
-        System.out.println("\nEL empleado mása antigüo es "+emplMin.getNombre()+" desde "+min);
-        
-}
-        
-    
-
-   public void Antiguedad() {
-        int mayor = 2022, menor = 2022;
-        Empleado emplmax; 
-        Empleado emplmin;
-        
-//        System.out.println(arr);        
-        
-        for (int i = 1; i < antiguedad.getTamanio(); i++) {
-            if(antiguedad.getElemento(i) > mayor){
-                menor = antiguedad.getElemento(i);
-                
-                
-                
-               
-            }
-            if(antiguedad.getElemento(i) < menor){
-                mayor = antiguedad.getElemento(i);
-            }
-        }
-        System.out.println("Es el trabajador de mayor antiguedad: " + mayor);
-        System.out.println("Es el trabajador de menor antiguedad: " + menor);
-}
 }

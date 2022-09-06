@@ -20,7 +20,7 @@ public class Empresa {
         
         NominaADTT ep = new NominaADTT();
         ep.leerArchivos("C:\\Users\\emycr\\Documents\\ED1310\\junio.dat");
-        ep.Antiguedad();
+        
         
     }
     
