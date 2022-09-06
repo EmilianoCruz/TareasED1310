@@ -6,7 +6,7 @@ package ico.fes.acme;
 
 /**
  *
- * @author Cabrera
+ * @author emycr
  */
 public class Empleado {
     public static final double VALOR_HORAS_EXTRA = 276.5;
