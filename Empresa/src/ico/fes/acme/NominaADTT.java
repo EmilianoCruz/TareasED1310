@@ -55,6 +55,7 @@ public class NominaADTT {
                     partes = linea.split(",");
                     Empleados();
                     contador += 1;
+                    
                 }
             }
 
@@ -106,4 +107,29 @@ public class NominaADTT {
 //        
 //}
         
+    
+
+   public void Antiguedad() {
+        int mayor = 0, menor = 2999;
+        Empleado emplmax; 
+        Empleado emplmin;
+        int largo= antiguedad.getTamanio();
+     
+        
+        for (int i = 1; i < largo; i++) {
+            if(antiguedad.getElemento(i)>mayor){
+                mayor = antiguedad.getElemento(i);   
+            }
+            if(antiguedad.getElemento(i) < menor){
+               menor = antiguedad.getElemento(i);
+            }
+        }
+        System.out.println("Es el trabajador de mayor antiguedad: " + mayor);
+        System.out.println("Es el trabajador de menor antiguedad: " + menor);
+        
+        
+       
+           
+       }
 }
+
