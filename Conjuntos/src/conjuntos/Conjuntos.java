@@ -6,6 +6,7 @@ package conjuntos;
 
 import fes.ico.ed.ConjuntosADT;
 import java.time.temporal.Temporal;
+import java.util.ArrayList;
 
 /**
  *
@@ -18,17 +19,52 @@ public class Conjuntos {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        ConjuntosADT <Persona> ejem= new ConjuntosADT(2);
-        ConjuntosADT<Persona> ejem2 = new ConjuntosADT(2);
+        ConjuntosADT <Integer> ejem3 = new ConjuntosADT();
+        ArrayList <Integer> ejem4 = new ArrayList<>();
+        ConjuntosADT<String> ejem5 = new ConjuntosADT(); 
+        ConjuntosADT<String> ejem6 = new ConjuntosADT(); 
         
-        ejem.setElemento(0, new Persona("Emiliano", 12));
-        ejem2.setElemento(0, new Persona("Emiliano", 12));
+        
+        ejem5.Agregar("Emiliano");
+        ejem5.Agregar("Emiliano");
+        ejem5.Agregar("Sofia");
+        System.out.println(ejem5);
+        ejem6.Agregar("Emiliano");
+        //ejem6.Agregar("Sofia");
+        System.out.println(ejem5.Equals(ejem6));
+        System.out.println("La longitud del conjunto es:"+ejem5.Longitud());
+        System.out.println(ejem5.Contiene("Sofia"));
+        System.out.println(ejem3.Contiene(10));
+        ejem3.Agregar(2);
+        ejem3.Agregar(2);
+        System.out.println(ejem3.Contiene(2));
+        ejem3.Agregar(7);
+        System.out.println(ejem3);
+        System.out.println(ejem4);
+        ejem4.add(3);
+        ejem4.add(2);
+        ejem4.add(24);
+        ejem3.Union(ejem4);
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        //ejem.setElemento(0, new Persona("Emiliano", 12));
+        //ejem2.setElemento(0, new Persona("Emiliano", 12));
         //System.out.println(ejem);
         //System.out.println(ejem.getTamanio()); 
-        Persona busqueda = new Persona("Emiliano", 12);
+        //Persona busqueda = new Persona("Emiliano", 12);
         //System.out.println(ejem.Contiene(busqueda));
         //System.out.println(ejem.Equals(ejem2));
-        System.out.println(ejem.Equals(ejem2));
+        //System.out.println(ejem.Equals(ejem2));
         
        
          
