@@ -45,28 +45,6 @@ public class Conjuntos {
         ejem4.add(2);
         ejem4.add(24);
         ejem3.Union(ejem4);
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        //ejem.setElemento(0, new Persona("Emiliano", 12));
-        //ejem2.setElemento(0, new Persona("Emiliano", 12));
-        //System.out.println(ejem);
-        //System.out.println(ejem.getTamanio()); 
-        //Persona busqueda = new Persona("Emiliano", 12);
-        //System.out.println(ejem.Contiene(busqueda));
-        //System.out.println(ejem.Equals(ejem2));
-        //System.out.println(ejem.Equals(ejem2));
-        
-       
          
         
         
