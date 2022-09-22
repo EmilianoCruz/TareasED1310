@@ -19,32 +19,56 @@ public class Conjuntos {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        ConjuntosADT <Integer> ejem3 = new ConjuntosADT();
-        ArrayList <Integer> ejem4 = new ArrayList<>();
-        ConjuntosADT<String> ejem5 = new ConjuntosADT(); 
-        ConjuntosADT<String> ejem6 = new ConjuntosADT(); 
+        ConjuntosADT <Integer> ejem3 = new ConjuntosADT<>();
+        ConjuntosADT <Integer> ejem4 = new ConjuntosADT<>();
+        ConjuntosADT<String> ejem5 = new ConjuntosADT<>(); 
+        ConjuntosADT<String> ejem6 = new ConjuntosADT<>(); 
+        ConjuntosADT<Integer> ejem1 = new ConjuntosADT<>(); 
         
         
         ejem5.Agregar("Emiliano");
         ejem5.Agregar("Emiliano");
         ejem5.Agregar("Sofia");
-        System.out.println(ejem5);
-        ejem6.Agregar("Emiliano");
-        //ejem6.Agregar("Sofia");
-        System.out.println(ejem5.Equals(ejem6));
+        ejem5.Agregar("Antonio");
+        System.out.println("Conjunto 1:"+ejem5);
         System.out.println("La longitud del conjunto es:"+ejem5.Longitud());
-        System.out.println(ejem5.Contiene("Sofia"));
-        System.out.println(ejem3.Contiene(10));
+        ejem5.Eliminar("Antonio");
+        System.out.println("Eliminamos a Antonio del conjunto 1: "+ejem5);
+        
+        ejem6.Agregar("Emiliano");
+        System.out.println("\nConjunto 2: "+ejem6+"\n");
+        
+        
+        
+        System.out.println("El conjunto 1 es igual al conjunto 2: "+ejem5.Equals(ejem6));
+        System.out.println("El conjunto 1 contiene a Sofia: "+ejem5.Contiene("Sofia"));
+        
         ejem3.Agregar(2);
-        ejem3.Agregar(2);
-        System.out.println(ejem3.Contiene(2));
+        ejem3.Agregar(3);
         ejem3.Agregar(7);
-        System.out.println(ejem3);
-        System.out.println(ejem4);
-        ejem4.add(3);
-        ejem4.add(2);
-        ejem4.add(24);
+        ejem3.Agregar(8);
+        System.out.println("\nConjunto 4: "+ejem3);
+        
+        ejem4.Agregar(3);
+        ejem4.Agregar(2);
+        ejem4.Agregar(24);
+        System.out.println("Conjunto 5:"+ejem4);
+        
+        
+        ejem1.Agregar(3);
+        ejem1.Agregar(2);
+        System.out.println("Conjunto 6: "+ ejem1);
+        System.out.println("\nEl conjunto 6 es subconjunto del conjunto 4: "+ejem1.SubConjunto(ejem3));
+        
+        ConjuntosADT<Integer> conjuntoint= ejem3.Interseccion(ejem4);
+        System.out.println("La interseccion del conjunto 4 y el conjunto 5 es: "+conjuntoint);
+        
+        ConjuntosADT<Integer> conjuntodif= ejem3.Diferencia(ejem4); 
+        System.out.println("La diferencia del conjunto 4 y el conjunto 5 es: "+conjuntodif);
+        
         ejem3.Union(ejem4);
+        System.out.println("La union del conjunto 4 y el conjunto 5 es: "+ejem3);
+
          
         
         
