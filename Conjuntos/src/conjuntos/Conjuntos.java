@@ -69,7 +69,7 @@ public class Conjuntos {
         ejem3.Union(ejem4);
         System.out.println("La union del conjunto 4 y el conjunto 5 es: "+ejem3);
 
-         
+       
         
         
     }
