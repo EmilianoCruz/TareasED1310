@@ -27,8 +27,9 @@ public class ListaLigadaADT<T> {
     }
 
     public int getTamanio() {
+        this.tamanio=0;
         Nodo<T> aux = head;
-        while (aux.getSiguiente() != null) {
+        while (aux != null) {
             aux = aux.getSiguiente();
             tamanio++;
         }
@@ -53,7 +54,6 @@ public class ListaLigadaADT<T> {
     public void agregarAlInicio(T valor) {
         if (head == null) {
             head = new Nodo(valor);
-            tamanio++;
         } else {
             Nodo<T> nuevo = new Nodo(valor);
             nuevo.setSiguiente(head);

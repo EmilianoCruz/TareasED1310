@@ -35,7 +35,7 @@ public class ListasSimpLi {
         n.agregarDespuesDe(n.getNodo(), 10);
         n.transversal();
 
-        System.out.println("\nTranseversal: ");
+        System.out.println("\nTransversal: ");
         n.transversal();
         System.out.println("\nEl tamaño de la lista es: " + n.getTamanio());
         System.out.println("\nElimiando la posición 2:");
@@ -49,7 +49,8 @@ public class ListasSimpLi {
         System.out.println("\nEliminando el final: ");
         n.eliminarElFinal();
         n.transversal();
-
+        
+        System.out.println(n.getTamanio());
         
         
       
