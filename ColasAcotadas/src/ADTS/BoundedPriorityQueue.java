@@ -11,18 +11,17 @@ import javax.swing.text.StyledEditorKit;
  *
  * @author emycr
  * @param <T>
+ * @param <E>
  */
 public class BoundedPriorityQueue<T> {
     private int tamanio; 
     private Object[] arreglo ; 
     private queueADT<T> cola= new queueADT<>();
-    private ArrayList<T> array; 
     int contador;
     
     public BoundedPriorityQueue(int niveles) {
        arreglo = new Object[niveles];
       // arreglo = new ArrayList(niveles);
-        array = new ArrayList<>(5); 
     }
     
     public int lenght(){
@@ -34,17 +33,9 @@ public class BoundedPriorityQueue<T> {
     }
     
     public void enqueue(int prioridad, T elemento ){
-//        cola.enqueue(elemento);
-//        arreglo[prioridad]=cola;
-        if (array.get(prioridad)==null) {
-              array.set(contador, elemento);
-        }else{
-            array.add(elemento);
-        }
-        
-        
+        cola.enqueue(elemento);
+        arreglo[prioridad]=cola;
     }
-    
     public void dequeue(){
         cola.dequeue();
     }
@@ -56,7 +47,7 @@ public class BoundedPriorityQueue<T> {
     public String toString(){
         String edo="";
         for (int i = 0; i < arreglo.length; i++) {
-            edo+="Elemento |"+i+"|"+arreglo[i]+"\n";
+            edo+="Elemento |"+(i+1)+"|"+arreglo[i]+"\n";
         }
         
         return edo;
