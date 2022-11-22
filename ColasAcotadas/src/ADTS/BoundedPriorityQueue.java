@@ -13,15 +13,16 @@ import javax.swing.text.StyledEditorKit;
  * @param <T>
  */
 public class BoundedPriorityQueue<T> {
-    private ADTArray<T> array2;
     private int tamanio; 
     private Object[] arreglo ; 
     private queueADT<T> cola= new queueADT<>();
-    private ArrayList<T> array;
-
+    private ArrayList<T> array; 
+    int contador;
     
     public BoundedPriorityQueue(int niveles) {
        arreglo = new Object[niveles];
+      // arreglo = new ArrayList(niveles);
+        array = new ArrayList<>(5); 
     }
     
     public int lenght(){
@@ -33,8 +34,14 @@ public class BoundedPriorityQueue<T> {
     }
     
     public void enqueue(int prioridad, T elemento ){
-        cola.enqueue(elemento);
-        arreglo[prioridad]= cola;
+//        cola.enqueue(elemento);
+//        arreglo[prioridad]=cola;
+        if (array.get(prioridad)==null) {
+              array.set(contador, elemento);
+        }else{
+            array.add(elemento);
+        }
+        
         
     }
     
