@@ -11,8 +11,8 @@ import java.util.Arrays;
  * @author emycr
  * @param <T>
  */
-public class HashTableADT<T> {
-
+public class HashTableADT<T>{
+    
     private String[] arreglo;
     private Object[] arreglo2;
     int tamanio, contador;
@@ -53,4 +53,5 @@ public class HashTableADT<T> {
         return edo;
 
     }
+
 }

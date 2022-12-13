@@ -35,6 +35,9 @@ public class TablasHash {
         n.remove(13);
 
         System.out.println("\n" + n.toString());
+        
+        
+        
 
     }
 
